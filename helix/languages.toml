@@ -1,0 +1,9 @@
+[[language]]
+name = "markdown"
+language-server = { command = "marksman" }
+
+[[language]]
+name = "html"
+auto-format = true
+file-types = ["html"]
+language-server = { command = "emmet-ls", args = ["--stdio"]}

@@ -1,0 +1,56 @@
+theme = "adwaita-dark"
+
+[editor]
+line-number = "relative"
+cursorline = true
+auto-save = true
+scrolloff = 8
+gutters = ["diagnostics", "spacer", "line-numbers", "spacer", "diff"]
+completion-replace = true
+bufferline = "multiple"
+true-color = true
+
+[editor.file-picker]
+hidden = false
+
+[editor.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'`' = '`'
+'<' = '>'
+
+[editor.lsp]
+display-inlay-hints = false
+snippets = true
+
+[editor.statusline]
+left = ["file-name", "file-modification-indicator"]
+center = ["version-control", "diagnostics"]
+right = ["mode", "spinner"]
+
+[editor.indent-guides]
+render = true
+# character = "·"
+character = "∣"
+
+[editor.soft-wrap]
+enable = true
+wrap-at-text-width = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[keys.normal]
+"}" = "goto_next_paragraph"
+"{" = "goto_prev_paragraph"
+
+[keys.normal.space]
+"w" = ":w"
+"q" = ":q"
+"Q" = ":q!"
+" " = ":config-reload"
+"v" = ":sh tmux popup -d '#{pane_current_path}' -w 90% -h 90% -E gitui"
