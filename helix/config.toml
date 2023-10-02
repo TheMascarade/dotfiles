@@ -1,4 +1,4 @@
-theme = "adwaita-dark"
+theme = "monokai_pro"
 
 [editor]
 line-number = "relative"
@@ -54,3 +54,4 @@ select = "underline"
 "Q" = ":q!"
 " " = ":config-reload"
 "v" = ":sh tmux popup -d '#{pane_current_path}' -w 90% -h 90% -E gitui"
+"t" = ":sh tmux popup -d '#{pane_current_path}' -w 90% -h 90% -E tmux"
