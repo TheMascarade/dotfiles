@@ -1,0 +1,10 @@
+configuration {
+    display-drun: "Applications:";
+    drun-display-format: "{icon} {name}";
+    show-icons: true;
+    modi:"drun,window,filebrowser";
+}
+//@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
+//@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
+//@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
+@theme "/usr/share/rofi/themes/android_notification.rasi"

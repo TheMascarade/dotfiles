@@ -1,0 +1,27 @@
+ls
+clear
+ls
+find yazi
+git clone https://github.com/sxyazi/yazi.git<\n>cd yazi<\n>cargo build --release
+clear
+cd ..
+rm -rf yazi/
+git clone https://github.com/sxyazi/yazi.git
+cd yazi/
+ls
+cp config/ ~/.config/yazi/
+mkdir ~/.config/yazi
+cp config/ ~/.config/yazi/
+cp -r config/ ~/.config/yazi/
+ls
+cd ..
+rm -rf yazi/
+ls
+ls rust/
+rm -rf rust/
+cler
+clear
+yazi
+cd .config/yazi/docs/
+hx
+exit
