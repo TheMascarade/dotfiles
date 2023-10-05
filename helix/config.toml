@@ -22,7 +22,6 @@ hidden = false
 '<' = '>'
 
 [editor.lsp]
-display-inlay-hints = false
 snippets = true
 
 [editor.statusline]
@@ -47,6 +46,13 @@ select = "underline"
 [keys.normal]
 "}" = "goto_next_paragraph"
 "{" = "goto_prev_paragraph"
+i = ["insert_mode", "collapse_selection"]
+a = ["append_mode", "collapse_selection"]
+esc = ["collapse_selection", "keep_primary_selection"]
+C-h = "select_prev_sibling"
+C-j = "shrink_selection"
+C-k = "expand_selection"
+C-l = "select_next_sibling"
 
 [keys.normal.space]
 "w" = ":w"
@@ -55,3 +61,7 @@ select = "underline"
 " " = ":config-reload"
 "v" = ":sh tmux popup -d '#{pane_current_path}' -w 90% -h 90% -E gitui"
 "t" = ":sh tmux popup -d '#{pane_current_path}' -w 90% -h 90% -E tmux"
+"e" = ":sh tmux popup -d '#{pane_current_path}' -w 90% -h 90% -E ranger"
+
+[keys.select]
+esc = ["collapse_selection", "keep_primary_selection", "normal_mode"]
