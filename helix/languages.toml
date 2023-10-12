@@ -9,6 +9,11 @@ file-types = ["html"]
 language-server = { command = "emmet-ls", args = ["--stdio"]}
 
 [[language]]
+name = "rust"
+auto-format = true
+file-types = ["rs"]
+
+[[language]]
 name = "python"
 scope = "source.python"
 auto-format = true

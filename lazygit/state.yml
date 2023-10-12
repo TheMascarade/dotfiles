@@ -1,8 +1,6 @@
 lastupdatecheck: 0
 recentrepos:
 - /home/matias/.config
-- /home/matias/.config/tmux
-- /home/matias/Proyectos/eloquent-javascript
 startuppopupversion: 5
 customcommandshistory: []
 hidecommandlog: false

@@ -10,6 +10,11 @@ completion-replace = true
 bufferline = "multiple"
 true-color = true
 
+[editor.statusline]
+left = ["file-name", "file-modification-indicator"]
+center = ["version-control", "diagnostics"]
+right = ["mode", "spinner"]
+
 [editor.file-picker]
 hidden = false
 
@@ -19,20 +24,15 @@ hidden = false
 '[' = ']'
 '"' = '"'
 '`' = '`'
-'<' = '>'
+"'" = "'"
 
 [editor.lsp]
 snippets = true
 
-[editor.statusline]
-left = ["file-name", "file-modification-indicator"]
-center = ["version-control", "diagnostics"]
-right = ["mode", "spinner"]
-
 [editor.indent-guides]
 render = true
-# character = "·"
 character = "∣"
+skip-level = 1
 
 [editor.soft-wrap]
 enable = true
@@ -59,9 +59,9 @@ C-l = "select_next_sibling"
 "q" = ":q"
 "Q" = ":q!"
 " " = ":config-reload"
-"v" = ":sh tmux popup -d '#{pane_current_path}' -w 90% -h 90% -E gitui"
-"t" = ":sh tmux popup -d '#{pane_current_path}' -w 90% -h 90% -E tmux"
-"e" = ":sh tmux popup -d '#{pane_current_path}' -w 90% -h 90% -E ranger"
+"v" = ":sh zellij run -f -c -- gitui"
+"t" = ":sh zellij action new-pane --floating"
+"e" = ":sh zellij run -f -c -- ranger ./"
 
 [keys.select]
 esc = ["collapse_selection", "keep_primary_selection", "normal_mode"]
