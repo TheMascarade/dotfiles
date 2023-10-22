@@ -60,7 +60,6 @@ C-l = "select_next_sibling"
 "Q" = ":q!"
 " " = ":config-reload"
 "v" = ":sh zellij run -f -c -- gitui"
-"t" = ":sh zellij action new-pane --floating"
 "e" = ":sh zellij run -f -c -- ranger ./"
 
 [keys.select]

@@ -15,7 +15,7 @@ layout {
 			borderless true
 			plugin location="zellij:tab-bar"
         }
-		pane cwd="~/"
+		children
 		pane {
 			size 1
 			borderless true
