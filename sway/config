@@ -8,9 +8,9 @@
 
 # Colors
     # Property Name         Border  BG      Text    Indicator Child_border
-    client.focused          #1c71d8 #1d1d1d #ebdbb2 #3584e4   #1c71d8
+    client.focused          #ffffff #ffffff #000000 #ffffff   #ffffff
     client.focused_inactive #1d1d1d #1d1d1d #ebdbb2 #1d2021   #1d1d1d
-    client.unfocused        #1d1d1d #1d1d1d #ebdbb2 #1d2021   #1d1d1d
+    client.unfocused        #ffffff #000000 #ffffff #1d2021   #ffffff
 
 # Borders
     default_border pixel 2px
@@ -34,7 +34,7 @@
     set $up k
     set $right l
 # Your preferred terminal emulator
-    set $term kitty
+    set $term foot
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -43,7 +43,7 @@
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-    output * bg /home/matias/Imágenes/mojave-nord.jpg fill
+    output * bg /home/matias/Imágenes/bn-waves.jpg fill
 #
 # Example configuration:
 #

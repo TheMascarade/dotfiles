@@ -1,7 +1,6 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
   margin: 2px;
-  margin-bottom: 0px;
   border: none;
   border-radius: 6px;
   font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
@@ -9,7 +8,7 @@
 }
 
 window#waybar {
-  background-color: rgba(43, 48, 59, 0);
+  background-color: black;
   color: #ffffff;
   transition-property: background-color;
   transition-duration: .5s;
@@ -29,7 +28,7 @@ window#waybar.solo {
 */
 
 window#waybar.termite {
-  background-color: #3F3F3F;
+  background-color: white;
 }
 
 window#waybar.chromium {
@@ -93,8 +92,8 @@ button:hover {
 #scratchpad,
 #mpd {
   padding: 1 10px;
-  color: #333333;
-  background-color: #bbccdd;
+  color: black;
+  background-color: #ffffff;
 }
 
 #window,
