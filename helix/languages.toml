@@ -1,33 +1,29 @@
+
+[[language]]
+name = "python"
+language-servers = [ "pyright", "ruff" ]
+auto-format = true
+
+[language-server.pyright.config.python.analysis]
+typeCheckingMode = "basic"
+
+[language-server.ruff]
+command = "ruff"
+
+[language-server.ruff.config.settings]
+args = ["--ignore", "E501"]
+
+[language.formatter]
+command = "black"
+args = ["--line-length", "88", "--quiet", "-"]
+
+[[language]]
+name = "rust"
+
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+
 [[languages]]
 name = "go"
 auto-format = true
 formatter = { command = "goimports" }
-
-[[language]]
-name = "markdown"
-language-server = { command = "marksman" }
-
-[[language]]
-name = "html"
-auto-format = true
-file-types = ["html"]
-language-server = { command = "emmet-ls", args = ["--stdio"]}
-
-[[language]]
-name = "rust"
-auto-format = true
-file-types = ["rs"]
-
-[[language]]
-name = "python"
-scope = "source.python"
-auto-format = true
-injection-regex = "python"
-file-types = ["py","pyi","py3","pyw","ptl",".pythonstartup",".pythonrc","SConstruct"]
-shebangs = ["python"]
-roots = ["setup.py", "setup.cfg", "pyproject.toml"]
-comment-token = "#"
-language-server = { command = "pyright-langserver", args = ["--stdio"] }
-indent = { tab-width = 4, unit = "    " }
-# will get "Async jobs timed out" errors if this empty config is not added
-config = {}
