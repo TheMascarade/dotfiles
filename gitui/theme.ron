@@ -1,11 +1,11 @@
 (
     selected_tab: None,
-    command_fg: None,
+    command_fg: Some(Black),
     selection_bg: None,
-    selection_fg: None,
+    selection_fg: Some(Black),
     cmdbar_bg: None,
     cmdbar_extra_lines_bg: None,
-    disabled_fg: None,
+    disabled_fg: Some(DarkGray),
     diff_line_add: None,
     diff_line_delete: None,
     diff_file_added: None,
@@ -19,5 +19,5 @@
     push_gauge_bg: None,
     push_gauge_fg: None,
     tag_fg: None,
-    branch_fg: None,
+    branch_fg: Some(LightRed),
 )
