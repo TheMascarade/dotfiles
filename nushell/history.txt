@@ -25,3 +25,7 @@ yazi
 cd .config/yazi/docs/
 hx
 exit
+ls
+exit
+ls
+exit

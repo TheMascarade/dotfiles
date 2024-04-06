@@ -204,7 +204,7 @@ on_force_close "quit"
 //    - true
 //    - false (Default)
 //
-simplified_ui true
+// simplified_ui true
 
 // Choose the path to the default shell that zellij will use for opening new panes
 // Default: $SHELL
@@ -229,7 +229,8 @@ simplified_ui true
 //
 // auto_layout true
 
-theme "default"
+// theme "default"
+theme "rose-pine"
 
 // The name of the default layout to load on startup
 // Default: "default"

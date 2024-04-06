@@ -1,7 +1,8 @@
+# Python
 
 [[language]]
 name = "python"
-language-servers = [ "pyright", "ruff" ]
+language-servers = ["pyright", "ruff"]
 auto-format = true
 
 [language-server.pyright.config.python.analysis]
@@ -17,13 +18,42 @@ args = ["--ignore", "E501"]
 command = "black"
 args = ["--line-length", "88", "--quiet", "-"]
 
+# Rust
+
 [[language]]
 name = "rust"
 
 [language-server.rust-analyzer.config.check]
 command = "clippy"
 
+
+[language-server.rust-analyzer.config.cargo]
+features = "all"
+
+# Go
+
 [[languages]]
 name = "go"
 auto-format = true
-formatter = { command = "goimports" }
+language-servers = ["golangci-lint-langserver", "gopls"]
+
+[language-server.golangci-lint-lsp]
+command = "golangci-lint-langserver"
+
+[language-server.golangci-lint-lsp.config]
+command = [
+  "golangci-lint",
+  "run",
+  "-E",
+  "exhaustive",
+  "--out-format",
+  "json",
+  "--issues-exit-code=1",
+]
+
+[language-server.gopls]
+command = "gopls"
+
+#formatter = { command = "goimports" }
+
+formatter = { command = "golines" }

@@ -1,14 +1,14 @@
-theme = "base16_transparent"
+theme = "rose_pine_moon"
 
 [editor]
 line-number = "relative"
 cursorline = true
 auto-save = true
-scrolloff = 8
-gutters = ["diagnostics", "spacer", "line-numbers", "spacer", "diff"]
+scrolloff = 999
 completion-replace = true
 bufferline = "multiple"
 true-color = true
+popup-border = "all"
 
 [editor.statusline]
 left = ["file-name", "file-modification-indicator"]
@@ -16,7 +16,9 @@ center = ["version-control", "diagnostics"]
 right = ["mode", "spinner"]
 
 [editor.file-picker]
-hidden = false
+# hidden = true
+# ignore = true
+# parents = true
 
 [editor.auto-pairs]
 '(' = ')'
@@ -25,6 +27,7 @@ hidden = false
 '"' = '"'
 '`' = '`'
 "'" = "'"
+'<' = '>'
 
 [editor.lsp]
 snippets = true
@@ -32,7 +35,7 @@ snippets = true
 [editor.indent-guides]
 render = true
 character = "∣"
-skip-level = 1
+skip-level = 0
 
 [editor.soft-wrap]
 enable = true
@@ -42,6 +45,11 @@ wrap-at-text-width = true
 insert = "bar"
 normal = "block"
 select = "underline"
+
+[editor.gutters]
+
+[editor.gutters.line-numbers]
+min-width = 1
 
 [keys.normal]
 "}" = "goto_next_paragraph"
@@ -60,7 +68,7 @@ C-l = "select_next_sibling"
 "Q" = ":q!"
 " " = ":config-reload"
 "v" = ":sh zellij run -f -c -- gitui"
-"e" = ":sh zellij run -f -c -- ranger ./"
+"e" = ":sh zellij run -f -c -- yazi $PWD"
 
 [keys.select]
 esc = ["collapse_selection", "keep_primary_selection", "normal_mode"]
