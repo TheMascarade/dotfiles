@@ -75,4 +75,9 @@ $env.NU_PLUGIN_DIRS = [
 ]
 
 # To add entries to PATH (on Windows you might use Path), you can use the following pattern:
-# $env.PATH = ($env.PATH | split row (char esep) | prepend '/some/path')
+$env.PATH = ($env.PATH | split row (char esep) 
+    | prepend '/home/matias/.cargo/bin'
+    | prepend '/home/linuxbrew/.linuxbrew/bin'
+    | prepend '/home/matias/go/bin'
+    | prepend '/home/matias/.local/bin'
+)

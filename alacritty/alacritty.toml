@@ -1,4 +1,9 @@
 import = ["~/.config/alacritty/rose-pine-moon.toml"]
+
+[shell]
+program = "/home/linuxbrew/.linuxbrew/bin/zellij"
+# args = ["cd $HOME"]
+
 [font]
 size = 12.5
 
@@ -9,3 +14,4 @@ family = "CommitMono"
 decorations = "none"
 dynamic_title = true
 startup_mode = "Maximized"
+padding = { x=5, y=5 }

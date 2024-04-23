@@ -29,3 +29,188 @@ ls
 exit
 ls
 exit
+clear
+cat Applications/
+ls Applications
+ls 
+ls -al
+cd Proyectos/Go/learning-go/ch7/
+ls
+cd liga
+ls
+bat main.go
+cat main.go
+clear
+ls
+ls utils/
+hx
+ls
+cd .config/nushell/
+hx config.nu
+hx
+clear
+nvim config.nu
+cargo uninstall nu
+brew install nushell
+exit
+clear
+nushell
+hx
+echo $PATH
+echo path
+echo $path
+echo $env.PATH
+clear
+cd Proyectos/Go/learning-go/ch7/
+ls
+zellij
+clear
+zellij
+echo $env.PATH
+which $env.PATH
+clear
+hx
+cd .config/nushell/
+ls
+nvim env.nu
+nvim config.nu
+rm config.nu
+touch config.nu
+nvim config.nu
+$env.PATH = ($env.PATH | split row (char esep) | prepend '/home/linuxbrew/.linuxbrew/bin')
+hx
+$env.PATH = ($env.PATH | split row (char esep) | prepend '~/.cargo/bin')
+ls
+eza
+bat
+bat config.nu
+yazi
+gitui
+clear
+ls
+ls ~/go/bin/
+$env.PATH = ($env.PATH | split row (char esep) | prepend '~/go/bin')
+clear
+hx env.nu
+clear
+cd ../alacritty/
+zellij
+clear
+zellij
+ls
+cd ch7/liga/
+cle
+cleear
+clear
+ls
+go run main.go
+zellij
+hx
+cd .config/nushell/
+nvim config.nu
+nvim env.nu
+zellij
+nvim env.nu
+source env.nu
+hx
+nvim env.nu
+source env.nu
+sudo dnf update
+hx
+cd .config/nushell/
+nvim env.nu
+source env.nu
+hx
+nvim env.nu
+hx
+source env.nu
+hx
+which hx
+which helix
+zellij
+clear
+source env.nu
+nvim env.nu
+source env.nu
+nvim env.nu
+source env.nu
+nvim env.nu
+source env.nu
+hx
+nvim env.nu
+source env.nu
+cd .config/nushell/
+source env.nu
+hx
+source env.nu
+hx
+ls ~/go/bin/
+ls ~/.cargo/bin
+zellij
+source env.nu
+clear
+hx
+zellij
+hx
+nvim env.nu
+hx env.nu
+source env.nu
+hx env.nu
+hx --health python
+ls ~/.local/bin
+source env.nu
+hx --health python
+clear
+hx env.nu
+clear
+cargo install-update
+cargo install-update -a
+cargo uninstall zellij
+brew install zellij
+zellij
+cd ~
+clear
+zellij 
+clear
+cd ~
+clear
+cd Proyectos/Go/learning-go/ch7/
+ls
+cd ..
+mkdir ch8
+cd ch8/
+clear
+ls
+brew update
+cd ~/.config/alacritty/
+alacritty
+alacritty -v
+which nu
+alacritty -v
+alacritty -vv
+hx --health python
+hx --health go
+ls
+cd ../ch7/
+ls
+cd liga
+hx
+cd ../../ch8/
+clear
+which gitui
+clear
+sudo dnf update
+clear
+hx
+version
+clear
+flatpak update
+mkdir publicaciones
+cd publicaciones/
+touch main.go
+hx main.go
+rm main.go
+go mod init publi
+touch main.go
+sudo dnf update
+cd .config/
