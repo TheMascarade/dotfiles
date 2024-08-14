@@ -1,4 +1,17 @@
 themes{
+    default {
+        fg "#f6f5f4"
+        bg "#33d17a"
+        black "#1e1e1e"
+        red 30
+        green "#33d17a"
+        yellow 50
+        blue "#3584e4"
+        magenta 70
+        cyan "#3584e4"
+        white "#f6f5f4"
+        orange 254
+    }
 	rose-pine-dawn {
 		bg "#faf4ed"
 		fg "#575279"

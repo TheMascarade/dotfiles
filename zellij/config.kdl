@@ -123,9 +123,9 @@ keybinds {
     }
     tmux {
         bind "[" { SwitchToMode "Scroll"; }
-        bind "Ctrl b" { Write 2; SwitchToMode "Normal"; }
-        bind "\"" { NewPane "Down"; SwitchToMode "Normal"; }
-        bind "%" { NewPane "Right"; SwitchToMode "Normal"; }
+        bind "Ctrl Space" { Write 2; SwitchToMode "Normal"; }
+        bind "-" { NewPane "Down"; SwitchToMode "Normal"; }
+        bind "|" { NewPane "Right"; SwitchToMode "Normal"; }
         bind "z" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
         bind "c" { NewTab; SwitchToMode "Normal"; }
         bind "," { SwitchToMode "RenameTab"; }
@@ -179,7 +179,7 @@ keybinds {
         bind "Ctrl h" { SwitchToMode "Move"; }
     }
     shared_except "tmux" "locked" {
-        bind "Ctrl b" { SwitchToMode "Tmux"; }
+        bind "Ctrl Space" { SwitchToMode "Tmux"; }
     }
 }
 
@@ -229,8 +229,8 @@ on_force_close "quit"
 //
 // auto_layout true
 
-// theme "default"
-theme "rose-pine"
+theme "default"
+//theme "rose-pine"
 
 // The name of the default layout to load on startup
 // Default: "default"
@@ -286,7 +286,7 @@ default_layout "personal"
 // Path to the default editor to use to edit pane scrollbuffer
 // Default: $EDITOR or $VISUAL
 //
-// scrollback_editor "/usr/bin/vim"
+scrollback_editor "hx"
 
 // When attaching to an existing session with other users,
 // should the session be mirrored (true)
